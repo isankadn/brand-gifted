@@ -72,7 +72,7 @@
     &.hover,
     &.focus,
     &.active {
-      background: $primary-300;
+      background: $brand;
       border-color: transparent;
       color: $white;
     }
@@ -321,5 +321,15 @@ a.inline-link {
 .pgn__bubble {
   &.pgn__bubble-warning {
     color: $gray-900;
+  }
+}
+
+#root header {
+  background: $primary;
+  .course-title {
+    color: $white;
+  }
+  .small {
+    color: $light;
   }
 }

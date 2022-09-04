@@ -1,4 +1,4 @@
-Inhertad from Open edX edX branding repo.
+Inherited from Open edX edX branding repo.
 
 ==================
 @isankadn/brand-gifted
