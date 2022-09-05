@@ -14,5 +14,9 @@
   "homepage": "",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@edx/paragon": "3.4.8"
   }
+  
 }
