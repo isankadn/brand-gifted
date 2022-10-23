@@ -1,6 +1,17 @@
-@import "../../../font-awesome/scss/font-awesome.scss";
+@import "/openedx/app/node_modules/font-awesome/scss/font-awesome.scss";
+
 // This file is included after all of Bootstrap. Any customization that can't
 // be made using variable definitions should be done here.
+.h2,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bitter', serif !important;
+  font-weight: bold !important;
+}
 
 // Alerts
 
@@ -46,11 +57,14 @@
   }
 }
 
-@each $color, $value in $theme-colors {
+@each $color,
+$value in $theme-colors {
   .btn-outline-#{$color} {
     background: $white;
     border-color: $light-300;
+
     &:not(:disabled):not(.disabled) {
+
       &:hover,
       &:focus,
       &:active,
@@ -67,6 +81,7 @@
 
 .btn-primary {
   &:not(:disabled):not(.disabled) {
+
     &:hover,
     &:focus,
     &:active,
@@ -84,7 +99,9 @@
   background: transparent;
   color: $white;
   border-color: $gray-500;
+
   &:not(:disabled):not(.disabled) {
+
     &:hover,
     &:focus,
     &:active,
@@ -102,7 +119,9 @@
   background: transparent;
   color: $white;
   border-color: $white;
+
   &:not(:disabled):not(.disabled) {
+
     &:hover,
     &:focus,
     &:active,
@@ -120,7 +139,9 @@
   background: $brand;
   color: $white;
   border-color: transparent;
+
   &:not(:disabled):not(.disabled) {
+
     &:hover,
     &:focus,
     &:active,
@@ -138,7 +159,9 @@
   background: $white;
   color: $primary;
   border-color: transparent;
+
   &:not(:disabled):not(.disabled) {
+
     &:hover,
     &:focus,
     &:active,
@@ -162,7 +185,8 @@
 // This loop is modeled after the loop in bootstrap's _forms.scss
 // which calls a mixin, form-validation-state($state, $color, $icon).
 // We make several overrides here for icons and focus states.
-@each $state, $data in $form-validation-states {
+@each $state,
+$data in $form-validation-states {
   $color: map-get($data, color);
   $icon: map-get($data, icon);
 
@@ -171,6 +195,7 @@
   .#{$state}-feedback {
     color: $body-color;
     font-weight: 400;
+
     &:before {
       background-image: str-replace($icon, "#", "%23");
       content: "";
@@ -185,6 +210,7 @@
   // Override focus states, use the standard focus
   // instead of a generated color.
   .form-control {
+
     .was-validated &:#{$state},
     &.is-#{$state} {
       &:focus {
@@ -195,6 +221,7 @@
   }
 
   .custom-select {
+
     .was-validated &:#{$state},
     &.is-#{$state} {
       &:focus {
@@ -245,6 +272,7 @@ h1,
   @media (max-width: map-get($grid-breakpoints, "sm")) {
     line-height: calc((40 / 16) * 1rem);
   }
+
   .mobile-type & {
     line-height: calc((40 / 16) * 1rem);
   }
@@ -287,10 +315,11 @@ h6,
   line-height: calc((20 / 16) * 1rem);
 }
 
-p > a[href]:not(.btn),
+p>a[href]:not(.btn),
 a.inline-link {
   text-decoration-line: underline;
   text-decoration-color: rgba($link-color, 0.3);
+
   &:hover {
     text-decoration-color: rgba($link-color, 1);
   }
@@ -298,14 +327,17 @@ a.inline-link {
 
 .pgn__searchfield {
   border-radius: 0 !important;
+
   .btn {
     background: $input-bg;
     display: flex;
   }
+
   &.has-focus {
     .btn {
       background: $input-focus-bg;
     }
+
     border-color: $input-focus-border-color !important;
   }
 }
@@ -314,6 +346,7 @@ a.inline-link {
 .progress {
   border: $progress-bar-border-width solid $progress-bar-border-color;
 }
+
 .progress-bar {
   background-color: $progress-bar-bg;
 }
@@ -327,17 +360,287 @@ a.inline-link {
 
 #root header {
   background: $primary;
+
   .course-title {
     color: $white;
   }
+
   .small {
     color: $light;
   }
+
   .logo {
     height: 60px;
   }
+
   img {
     height: 60px;
     width: auto;
+  }
+}
+
+.user-dropdown .dropdown-toggle {
+  background: none;
+  color: $white;
+  border: none;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: none !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):focus {
+  background: #000;
+  border-color: #000;
+}
+
+.profile-page-bg-banner {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+
+.site-header-desktop {
+  .nav-link {
+    color: #fff !important;
+  }
+}
+
+.nav .btn-outline-primary {
+  background: #000;
+  border-color: #000000;
+  color: #fff;
+
+}
+
+.alert-info {
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid #df2644;
+  box-shadow: none;
+  border: 2px solid;
+
+  a {
+    color: #df2644;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #B20F29;
+  }
+}
+
+.page__account-settings {
+  a {
+    color: #000;
+
+
+  }
+
+  .btn-link {
+    color: #B20F29;
+    background: none !important;
+  }
+
+  .standalone-link {
+    color: #000 !important;
+  }
+
+  .btn-outline-danger {
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-color: #df2644;
+    color: #df2644;
+  }
+
+  .btn-outlinedanger:not(:disabled):not(.disabled):hover {
+    background: #B20F29;
+    border: none;
+  }
+
+  .pgn__stateful-btn {
+    background-color: #df2644;
+    border: none;
+  }
+
+  .btnprimary:not(:disabled):not(.disabled):hover {
+    background: #B20F29;
+  }
+
+  .btn-outline-primary {
+    border-color: #AFAFAF !important;
+  }
+
+  .form-control {
+    border: 1px solid #afafaf;
+  }
+
+  .invalid-feedback {
+    color: #df2644;
+  }
+}
+
+.btn-outline-primary {
+  border-color: #AFAFAF !important;
+}
+
+.menu-content {
+  border-radius: 0;
+  background-color: #000 !important;
+  color: #fff;
+
+}
+
+.dropdown-menu {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #000 !important;
+
+  .dropdown-item {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .dropdown-item:hover {
+    background-color: #afafaf;
+    color: #df2644;
+  }
+
+}
+
+.icon-button {
+  color: #fff;
+}
+
+.nav-underline-tabs .nav-link:hover,
+.nav-underline-tabs .nav-link:focus,
+.nav-underline-tabs .nav-link.active {
+  border-bottom: 2px solid #000000;
+  background-color: #fff !important;
+}
+
+.course-tabs-navigation .nav a:hover,
+.course-tabs-navigation .nav button:hover {
+  background-color: #fff !important;
+}
+
+.pgn__card-header-actions {
+  .btn-brand {
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #fff !important;
+  }
+}
+
+.course-outline-tab {
+
+  a,
+  a:hover {
+    color: #01949A !important;
+  }
+}
+
+.text-success {
+  color: #01949A !important;
+}
+
+.collapsible-card-lg .collapsible-body {
+  padding-left: 1.5rem;
+}
+
+.pgn__checkpoint-button_dismiss:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.pgn__checkpoint .pgn__checkpoint-button_dismiss:focus {
+  border: none;
+}
+
+.pgn__checkpoint-button_advance {
+  background-color: #df2644;
+  border-color: #df2644;
+}
+
+.pgn__checkpoint-button_advance:hover {
+  background-color: #B20F29;
+
+}
+
+.pgn__checkpoint-button_advance:focus {
+  border: none;
+
+}
+
+.pgn__checkpoint-action-row {
+  .btn::before {
+    border: none;
+  }
+}
+
+.donut-ring.complete-stroke,
+.donut-segment.complete-stroke,
+.donut-hole.complete-stroke {
+  stroke: #01949A;
+}
+
+.bg-warning-300 {
+  background-color: #df2644 !important;
+}
+
+.sequence-navigation .btn.complete {
+  background-color: #01949A;
+  color: #e9fafa;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .container-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .bottom-menu {
+    padding-left: 0;
+    display: contents;
+
+    li {
+      display: contents;
+      font-size: 1rem;
+    }
+  }
+
+  .site-header-mobile {
+    height: 80px !important;
+
+    .nav-link {
+      color: #fff;
+    }
+  }
+
+  .pgn__card-header {
+    flex-direction: column;
+
+  }
+
+  .collapsible-trigger .ml-3 {
+    margin-left: 0rem !important;
+    padding-left: 1rem !important;
   }
 }
