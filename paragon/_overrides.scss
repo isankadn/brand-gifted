@@ -12,7 +12,9 @@ h6 {
   font-family: 'Bitter', serif !important;
   font-weight: bold !important;
 }
-
+.hd-1, .hd-2, .hd-3, .hd-4, .hd-5, .hd-6, .hd-7, .hd-8{
+  color: #000;
+}
 // Alerts
 
 .alert-dismissible .close {
@@ -39,6 +41,8 @@ h6 {
 
 .btn {
   text-decoration: none;
+  text-transform: uppercase;
+  
 }
 
 .btn-link {
@@ -510,11 +514,25 @@ a.inline-link {
   }
 
 }
-
+.discussion-module .btn{
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.discussion .new-post-btn{
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.discussion-module .add_post_btn_container{
+  display: inline-table;
+}
 .icon-button {
   color: #fff;
 }
-
+.btn-outline-primary .btn-outline-primary{
+ border: none;
+}
 .nav-underline-tabs .nav-link:hover,
 .nav-underline-tabs .nav-link:focus,
 .nav-underline-tabs .nav-link.active {
@@ -526,7 +544,9 @@ a.inline-link {
 .course-tabs-navigation .nav button:hover {
   background-color: #fff !important;
 }
-
+.pgn__menu-select-trigger-btn{
+  display: inline-block;
+}
 .pgn__card-header-actions {
   .btn-brand {
     text-transform: uppercase;
@@ -536,9 +556,19 @@ a.inline-link {
     color: #fff !important;
   }
 }
-
+.btn-link{
+  color: #01949A !important;
+}
+.btn-link:hover{
+  color: #01949a;
+  text-decoration: underline;
+}
 .course-outline-tab {
-
+  .pgn__card-header-actions{
+    a:hover {
+      color: #fff !important;
+    }
+  }
   a,
   a:hover {
     color: #01949A !important;
@@ -594,11 +624,17 @@ a.inline-link {
 }
 
 .sequence-navigation .btn.complete {
-  background-color: #01949A;
-  color: #e9fafa;
+  background-color: #e9fafa;
+  color: #01949A;
 }
 
-
+.bottom-menu li a {
+  font-size: 0.8rem;
+}
+.text-left a,
+.text-right a{
+  padding: 0 !important;
+}
 
 @media (max-width: 991.98px) {
   .container-xl {
