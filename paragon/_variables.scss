@@ -406,8 +406,7 @@ $caret-spacing: $caret-width * 1 !default;
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: 'Poppins', sans-serif !default;
-$font-family-monospace: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: 'Poppins', sans-serif !default;
 $font-family-serif: 'Poppins', sans-serif !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case

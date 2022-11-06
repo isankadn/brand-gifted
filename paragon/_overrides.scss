@@ -635,7 +635,9 @@ a.inline-link {
 .text-right a{
   padding: 0 !important;
 }
-
+.footer a {
+  font-size: 0.8rem;
+}
 @media (max-width: 991.98px) {
   .container-xl {
     padding-left: 15px;
