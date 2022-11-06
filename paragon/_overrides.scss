@@ -12,9 +12,18 @@ h6 {
   font-family: 'Bitter', serif !important;
   font-weight: bold !important;
 }
-.hd-1, .hd-2, .hd-3, .hd-4, .hd-5, .hd-6, .hd-7, .hd-8{
+
+.hd-1,
+.hd-2,
+.hd-3,
+.hd-4,
+.hd-5,
+.hd-6,
+.hd-7,
+.hd-8 {
   color: #000;
 }
+
 // Alerts
 
 .alert-dismissible .close {
@@ -39,10 +48,9 @@ h6 {
 
 // Buttons
 
-.btn {
+.btn-primary {
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 
 .btn-link {
@@ -514,25 +522,31 @@ a.inline-link {
   }
 
 }
-.discussion-module .btn{
+
+.discussion-module .btn {
   border-radius: 25px;
   text-transform: uppercase;
   font-weight: 500;
 }
-.discussion .new-post-btn{
+
+.discussion .new-post-btn {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.discussion-module .add_post_btn_container{
+
+.discussion-module .add_post_btn_container {
   display: inline-table;
 }
+
 .icon-button {
   color: #fff;
 }
-.btn-outline-primary .btn-outline-primary{
- border: none;
+
+.btn-outline-primary .btn-outline-primary {
+  border: none;
 }
+
 .nav-underline-tabs .nav-link:hover,
 .nav-underline-tabs .nav-link:focus,
 .nav-underline-tabs .nav-link.active {
@@ -544,9 +558,11 @@ a.inline-link {
 .course-tabs-navigation .nav button:hover {
   background-color: #fff !important;
 }
-.pgn__menu-select-trigger-btn{
+
+.pgn__menu-select-trigger-btn {
   display: inline-block;
 }
+
 .pgn__card-header-actions {
   .btn-brand {
     text-transform: uppercase;
@@ -556,19 +572,23 @@ a.inline-link {
     color: #fff !important;
   }
 }
-.btn-link{
+
+.btn-link {
   color: #01949A !important;
 }
-.btn-link:hover{
+
+.btn-link:hover {
   color: #01949a;
   text-decoration: underline;
 }
+
 .course-outline-tab {
-  .pgn__card-header-actions{
+  .pgn__card-header-actions {
     a:hover {
       color: #fff !important;
     }
   }
+
   a,
   a:hover {
     color: #01949A !important;
@@ -631,13 +651,16 @@ a.inline-link {
 .bottom-menu li a {
   font-size: 0.8rem;
 }
+
 .text-left a,
-.text-right a{
+.text-right a {
   padding: 0 !important;
 }
+
 .footer a {
   font-size: 0.8rem;
 }
+
 @media (max-width: 991.98px) {
   .container-xl {
     padding-left: 15px;
